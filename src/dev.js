@@ -8,7 +8,6 @@ import ReactDigital from './main';
 
 class App extends React.Component{
   state = {
-
   };
 
   constructor(props){
@@ -21,16 +20,26 @@ class App extends React.Component{
   render(){
     return (
       <div className="hello-react-digital">
+        <ReactDigital value={2} />
         <ReactDigital value={0} />
         <ReactDigital value={1} />
-        <ReactDigital value={2} />
-        <ReactDigital value={3} />
-        <ReactDigital value={4} />
-        <ReactDigital value={5} />
-        <ReactDigital value={6} />
         <ReactDigital value={7} />
-        <ReactDigital value={8} />
-        <ReactDigital value={9} />
+        <ReactDigital value={'-'} />
+        <ReactDigital value={1} />
+        <ReactDigital value={2} />
+        <ReactDigital value={'-'} />
+        <ReactDigital value={0} />
+        <ReactDigital value={7} />
+        <div className="mr5_" style={{ fontSize: 10, marginTop: 20}}>
+          <ReactDigital className="dib" value={0} />
+          <ReactDigital className="dib" value={0} />
+          <ReactDigital className="dib" value={':'} />
+          <ReactDigital className="dib" value={1} />
+          <ReactDigital className="dib" value={6} />
+          <ReactDigital className="dib" value={':'} />
+          <ReactDigital className="dib" value={0} />
+          <ReactDigital className="dib" value={0} />
+        </div>
       </div>
     );
   }

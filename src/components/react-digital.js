@@ -1,32 +1,28 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import noop from 'noop';
-import objectAssign from 'object-assign';
 
 export default class extends Component {
   /*===properties start===*/
   static propTypes = {
     className: PropTypes.string,
-    value: PropTypes.number,
+    value: PropTypes.any,
   };
 
   static defaultProps = {
-    value: 8
+    value: ':'
   };
   /*===properties end===*/
 
-  constructor(inProps) {
-    super(inProps);
-    this.state = {
-    };
+  get type(){
+    const { value } = this.props;
+    return value === '.' ? 'dot' : 'digital';
   }
 
   render() {
     const { className, value, ...props } = this.props;
     return (
-      <div className={classNames('react-digital', className)}  {...props}>
+      <div data-type={this.type} className={classNames('react-digital', className)}  {...props}>
         <div className="body" data-digital={value}>
           <span className="d1"></span>
           <span className="d2"></span>
