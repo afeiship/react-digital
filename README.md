@@ -10,7 +10,8 @@
   };
 
   static defaultProps = {
-    value: ':'
+    value: ':',
+    flat: false
   };
   
 ```

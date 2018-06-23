@@ -10,15 +10,16 @@ export default class extends Component {
   };
 
   static defaultProps = {
-    value: ':'
+    value: ':',
+    flat: false
   };
   /*===properties end===*/
 
   render() {
-    const { className, value, ...props } = this.props;
+    const { className, value, flat, ...props } = this.props;
     return (
       <div data-value={value} className={classNames('react-digital', className)}  {...props}>
-        <div className="body" data-digital={value}>
+        <div className="body" data-flat={flat} data-digital={value}>
           <span className="d1"></span>
           <span className="d2"></span>
           <span className="d3"></span>
