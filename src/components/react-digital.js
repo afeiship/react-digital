@@ -14,15 +14,10 @@ export default class extends Component {
   };
   /*===properties end===*/
 
-  get type(){
-    const { value } = this.props;
-    return value === '.' ? 'dot' : 'digital';
-  }
-
   render() {
     const { className, value, ...props } = this.props;
     return (
-      <div data-type={this.type} className={classNames('react-digital', className)}  {...props}>
+      <div data-value={value} className={classNames('react-digital', className)}  {...props}>
         <div className="body" data-digital={value}>
           <span className="d1"></span>
           <span className="d2"></span>
