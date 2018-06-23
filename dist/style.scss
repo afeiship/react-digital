@@ -209,10 +209,10 @@ $react-digital-options:(
       }
     }
     &[data-digital="1"] {
-      width: 0.5em;
       .d5, .d7 {
         opacity: 1;
       }
+      width: 0.5em;
       .d1, .d2, .d3, .d4,  .d6{
         display: none;
       }
