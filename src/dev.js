@@ -20,16 +20,18 @@ class App extends React.Component{
   render(){
     return (
       <div className="hello-react-digital">
-        <ReactDigital value={2} />
-        <ReactDigital value={0} />
-        <ReactDigital value={1} />
-        <ReactDigital value={7} />
-        <ReactDigital value={'-'} />
-        <ReactDigital value={1} />
-        <ReactDigital value={2} />
-        <ReactDigital value={'-'} />
-        <ReactDigital value={0} />
-        <ReactDigital value={7} />
+        <div className="dib_ mr5_"  style={{ fontSize: 20}}>
+          <ReactDigital value={2} />
+          <ReactDigital value={0} />
+          <ReactDigital value={1} />
+          <ReactDigital value={7} />
+          <ReactDigital value={'-'} />
+          <ReactDigital value={1} />
+          <ReactDigital value={2} />
+          <ReactDigital value={'-'} />
+          <ReactDigital value={0} />
+          <ReactDigital value={7} />
+        </div>
         <div className="mr5_" style={{ fontSize: 10, marginTop: 20}}>
           <ReactDigital className="dib" value={0} />
           <ReactDigital className="dib" value={0} />

@@ -1,5 +1,5 @@
 $react-digital-options:(
-  font-size: 10px,
+  font-size: 20px,
   color: #333
 )!default;
 
@@ -12,8 +12,8 @@ $react-digital-options:(
   div {
     text-align: left;
     position: relative;
-    width: 2.8em;
-    height: 5.0em;
+    width: 1.4em;
+    height: 2.5em;
     display: inline-block;
     span {
       opacity: 0;
@@ -28,37 +28,37 @@ $react-digital-options:(
         position: absolute;
         width: 0;
         height: 0;
-        border: 0.5em solid transparent;
+        border: 0.25em solid transparent;
       }
     }
 
     &[data-digital=':']{
-      width:0.5em;
+      width:0.25em;
       &:before,
       &:after{
-        width:0.5em;
-        height:0.5em;
+        width:0.25em;
+        height:0.25em;
         content:'';
         position:absolute;
         background-color:$color;
         left:0;
-        top:1.4em;
+        top:0.7em;
       }
       &:after{
-        top:3.4em;
+        top:1.7em;
       }
     }
 
     &[data-digital='.']{
-      width:0.5em;
+      width:0.25em;
       &:after{
-        width:0.5em;
-        height:0.5em;
+        width:0.25em;
+        height:0.25em;
         content:'';
         position:absolute;
         background-color:$color;
         left:0;
-        top:1.4em;
+        top:0.7em;
       }
       &:after{
         top: auto;
@@ -71,112 +71,112 @@ $react-digital-options:(
 
 
   .d1, .d2, .d3{
-    height: 0.5em;
-    width: 1.6em;
-    left: 0.6em;
+    height: 0.25em;
+    width: 0.8em;
+    left: 0.3em;
   }
 
   .d1 {
     top: 0;
     &:before {
-      border-width: 0 0.5em 0.5em 0;
+      border-width: 0 0.25em 0.25em 0;
       border-right-color: inherit;
-      left: -0.5em;
+      left: -0.25em;
     }
     &:after {
-      border-width: 0 0 0.5em 0.5em;
+      border-width: 0 0 0.25em 0.25em;
       border-left-color: inherit;
-      right: -0.5em;
+      right: -0.25em;
     }
   }
   .d2 {
-    top: 2.3em;
+    top: 1.15em;
     &:before {
-      border-width: 0.3em .4em 0.2em;
+      border-width: 0.15em 0.2em 0.1em;
       border-right-color: inherit;
-      left: -0.8em;
+      left: -0.4em;
     }
     &:after {
-      border-width: 0.3em .4em 0.2em;
+      border-width: 0.15em 0.2em 0.1em;
       border-left-color: inherit;
-      right: -0.8em;
+      right: -0.4em;
     }
   }
   .d3 {
     bottom: 0;
     &:before {
-      border-width: 0.5em 0.5em 0 0;
+      border-width: 0.25em 0.25em 0 0;
       border-right-color: inherit;
-      left: -0.5em;
+      left: -0.25em;
     }
     &:after {
-      border-width: 0.5em 0 0 0.5em;
+      border-width: 0.25em 0 0 0.25em;
       border-left-color: inherit;
-      right: -0.5em;
+      right: -0.25em;
     }
   }
   .d4 {
-    width: 0.5em;
-    height: 1.4em;
-    top: .7em;
+    width: 0.25em;
+    height: 0.7em;
+    top: 0.35em;
     left: 0;
     &:before {
-      border-width: 0 0.5em 0.5em 0;
+      border-width: 0 0.25em 0.25em 0;
       border-bottom-color: inherit;
-      top: -0.5em;
+      top: -0.25em;
     }
     &:after {
-      border-width: 0 0 0.5em 0.5em;
+      border-width: 0 0 0.25em 0.25em;
       border-left-color: inherit;
-      bottom: -0.5em;
+      bottom: -0.25em;
     }
   }
   .d5 {
-    width: 0.5em;
-    height: 1.4em;
-    top: .7em;
+    width: 0.25em;
+    height: 0.7em;
+    top: 0.35em;
     right: 0;
     &:before {
-      border-width: 0 0 0.5em 0.5em;
+      border-width: 0 0 0.25em 0.25em;
       border-bottom-color: inherit;
-      top: -0.5em;
+      top: -0.25em;
     }
     &:after {
-      border-width: 0.5em 0 0 0.5em;
+      border-width: 0.25em 0 0 0.25em;
       border-top-color: inherit;
-      bottom: -0.5em;
+      bottom: -0.25em;
     }
   }
   .d6 {
-    width: 0.5em;
-    height: 1.4em;
-    bottom: 0.5em;
+    width: 0.25em;
+    height: 0.7em;
+    bottom: 0.25em;
     left: 0;
     &:before {
-      border-width: 0 0.5em 0.5em 0;
+      border-width: 0 0.25em 0.25em 0;
       border-bottom-color: inherit;
-      top: -0.5em;
+      top: -0.25em;
     }
     &:after {
-      border-width: 0 0 0.5em 0.5em;
+      border-width: 0 0 0.25em 0.25em;
       border-left-color: inherit;
-      bottom: -0.5em;
+      bottom: -0.25em;
     }
   }
   .d7 {
-    width: 0.5em;
-    height: 1.4em;
-    bottom: 0.5em;
+    width: 0.25em;
+    height: 0.7em;
+    bottom: 0.25em;
     right: 0;
     &:before {
-      border-width: 0 0 0.5em 0.5em;
+      border-width: 0 0 0.25em 0.25em;
       border-bottom-color: inherit;
-      top: -0.5em;
+      top: -0.25em;
     }
     &:after {
-      border-width: 0.5em 0 0 0.5em;
+      border-width: 0.25em 0 0 0.25em;
       border-top-color: inherit;
-      bottom: -0.5em;
+      bottom: -0.25em;
     }
   }
 
@@ -210,7 +210,7 @@ $react-digital-options:(
     }
     &[data-digital="1"] {
       &[data-flat=false]{
-        width: 0.5em;
+        width: 0.25em;
       }
       .d5, .d7 {
         opacity: 1;
