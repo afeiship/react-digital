@@ -1,2 +1,2 @@
-import ReactDigital from 'components/react-digital';
+import ReactDigital from './components';
 export default ReactDigital;
